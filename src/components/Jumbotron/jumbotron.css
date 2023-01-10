@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@500&family=Rajdhani&display=swap");
+
+.jumbotron {
+    position: relative;
+    padding-top: 56.25%;
+    animation-name: hoofIn;
+    animation-duration: 4s;
+}
+
+@keyframes hoofIn {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.hero {
+    position: absolute;
+    margin-top: -9vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.slogan {
+    width: 100%;
+    z-index: 6;
+    margin-top: -35%;
+    position: relative;
+    animation-name: slideDown;
+    animation-duration: 2s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.satu,
+.dua {
+    width: 25%;
+    text-align: center;
+}
+
+.satu {
+    font-size: 1vw;
+    letter-spacing: 1.9vw;
+    font-family: "Bebas Neue", cursive;
+    text-indent: 1.9vw;
+    margin-right: 10%;
+}
+
+.satu span {
+    font-size: 5vw;
+    letter-spacing: 0vw;
+    color: #03989e;
+    font-weight: bold;
+    font-family: "Bebas Neue", cursive;
+    line-height: 80%;
+}
+
+.dua {
+    font-size: 1vw;
+    letter-spacing: 2.25vw;
+    font-family: "Bebas Neue", cursive;
+    text-indent: 1.6vw;
+    margin-left: 10%;
+}
+
+.dua span {
+    font-size: 5vw;
+    letter-spacing: 0vw;
+    color: #03989e;
+    font-weight: bold;
+    font-family: "Bebas Neue", cursive;
+    line-height: 80%;
+}
+
+/* Responsive */
+
+/* VERY Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .jumbotron {
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    .satu {
+        margin-top: 10vh;
+        margin-left: -3vw;
+        letter-spacing: 2.4vw;
+        text-indent: 2.3vw;
+        font-size: 1.5vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .satu span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .dua {
+        margin-top: 10vh;
+        margin-right: -3vw;
+        letter-spacing: 2.9vw;
+        text-indent: 2.2vw;
+        font-size: 1.5vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .dua span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .hero {
+        margin-top: -5vh;
+    }
+
+    .hero iframe {
+        transform: scale(2);
+    }
+}
+
+/* Extra Small Screen */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .jumbotron {
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    .satu {
+        margin-top: 2vh;
+        letter-spacing: 2.4vw;
+        text-indent: 2.3vw;
+        font-size: 1.75vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .satu span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .dua {
+        margin-top: 2vh;
+        letter-spacing: 2.9vw;
+        text-indent: 2.3vw;
+        font-size: 1.75vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .dua span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .hero {
+        margin-top: -5vh;
+    }
+
+    .hero iframe {
+        transform: scale(1.5);
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .jumbotron {
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    .satu {
+        margin-top: 2vh;
+        letter-spacing: 2.55vw;
+        text-indent: 2.55vw;
+        font-size: 1.5vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .satu span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .dua {
+        margin-top: 2vh;
+        letter-spacing: 3.1vw;
+        text-indent: 2.4vw;
+        font-size: 1.5vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .dua span {
+        font-size: 7vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .hero {
+        margin-top: -6vh;
+    }
+
+    .hero iframe {
+        transform: scale(1.3);
+    }
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .satu {
+        margin-top: 2vh;
+        letter-spacing: 1.85vw;
+        text-indent: 1.9vw;
+        font-size: 1vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .satu span {
+        font-size: 5vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+
+    .dua {
+        margin-top: 2vh;
+        letter-spacing: 2.25vw;
+        text-indent: 1.7vw;
+        font-size: 1vw;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .dua span {
+        font-size: 5vw;
+        letter-spacing: 0;
+        line-height: none;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    /* None */
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1441px) and (max-width: 2112px) {
+    /* None */
+}
+
+/* VERY Large Screen */
+@media only screen and (min-width: 2113px) {
+    /* none */
+}

@@ -1,0 +1,134 @@
+.img-1 img {
+    width: 100%;
+}
+
+li > button::before {
+    color: black !important;
+    background-color: black;
+    border-radius: 50px;
+}
+
+li.slick-active > button::before {
+    color: green !important;
+    background-color: green;
+}
+
+.batox {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.batox img {
+    transition: transform 0.5s ease;
+}
+
+.bg-play {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    height: 20%;
+}
+
+.batox .bg-play:hover {
+    background-color: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.popup-vids {
+    z-index: 99;
+}
+
+/* Responsive */
+
+/* VERY Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .popup-vids {
+        margin-top: 50vh;
+    }
+
+    .popup-vids iframe {
+        height: 40%;
+        width: 100%;
+    }
+
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* Extra Small Screen */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .popup-vids {
+        margin-top: 30vh;
+    }
+
+    .popup-vids iframe {
+        height: 60%;
+        width: 100%;
+    }
+
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .popup-vids {
+        margin-top: 20vh;
+    }
+
+    .popup-vids iframe {
+        height: 75%;
+        width: 100%;
+    }
+
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1441px) and (max-width: 2112px) {
+    .play-btn {
+        align-items: center;
+    }
+}
+
+/* VERY Large Screen */
+@media only screen and (min-width: 2113px) {
+    .play-btn {
+        align-items: center;
+    }
+}

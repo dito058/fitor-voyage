@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@500&family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Manrope:wght@300&display=swap");
+
+#Works {
+    background-color: #73fafe;
+    margin-top: -4vh;
+    padding-bottom: 10%;
+}
+
+.judul-porto {
+    opacity: 0;
+    transform: translate3d(-25%, 0, 0);
+}
+
+.judul-porto-fadein {
+    opacity: 1;
+    transition: all 2s;
+    transform: none;
+}
+
+.judul-porto h1 {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 7vw;
+    font-family: "Bebas Neue", cursive;
+}
+
+.judul-porto h2 {
+    text-align: center;
+    font-size: 2.5vw;
+    padding-bottom: 1%;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6%;
+}
+
+/* Responsive */
+
+/* VERY Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    #Works {
+        padding-bottom: 25%;
+    }
+
+    .judul-porto h1 {
+        font-size: 10vw;
+    }
+
+    .judul-porto h2 {
+        font-size: 5vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* Extra Small Screen */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #Works {
+        padding-bottom: 10%;
+    }
+
+    .judul-porto h1 {
+        font-size: 7vw;
+    }
+
+    .judul-porto h2 {
+        font-size: 3vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #Works {
+        padding-bottom: 10%;
+    }
+
+    .judul-porto h1 {
+        font-size: 6vw;
+    }
+
+    .judul-porto h2 {
+        font-size: 3vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #Works {
+        margin-top: -7vh;
+    }
+
+    .judul-porto h1 {
+        font-size: 6vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .judul-porto h1 {
+        font-size: 6vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1441px) and (max-width: 2112px) {
+    .judul-porto h1 {
+        font-size: 6vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}
+
+/* VERY Large Screen */
+@media only screen and (min-width: 2113px) {
+    .judul-porto h1 {
+        font-size: 6vw;
+    }
+
+    .judul-porto {
+        padding-bottom: 3vh;
+    }
+}

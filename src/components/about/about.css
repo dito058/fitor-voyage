@@ -1,0 +1,420 @@
+@font-face {
+    font-family: "Equinox";
+    src: local("Equinox"),
+        url(../../assets/fonts/Equinox/Equinox-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Kiona";
+    src: local("Kiona"),
+        url(../../assets/fonts/Kiona/Kiona-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: local("Metropolis"),
+        url(../../assets/fonts/Metropolis/Metropolis-SemiBold.otf)
+            format("opentype");
+}
+
+#About {
+    background-color: white;
+    width: 100%;
+    padding-top: 6%;
+}
+
+.about-judul1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.about-judul1 h1 {
+    font-family: Equinox;
+    font-weight: bolder;
+    font-size: 6.5vw;
+}
+
+.about-int {
+    width: 100%;
+}
+
+.about-int-vids {
+    width: 50%;
+    left: 0;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.about-int-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15vh;
+    margin-top: -5vh;
+}
+
+.about-judul2 {
+    font-family: Kiona;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: -0.1vw;
+    margin-top: -15vh;
+}
+
+.about-int-text p {
+    width: 75%;
+    display: block;
+    margin: auto;
+    font-size: 1.5vw;
+    font-family: Kiona;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.about-int-text h3 {
+    font-family: Metropolis;
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    font-size: 3vw;
+    width: 25%;
+    height: 10vh;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    box-shadow: -5px 5px 10px black;
+    text-shadow: -3px 3px black;
+    opacity: 0.3;
+}
+
+.interview-vids {
+    position: absolute;
+    top: 10vh;
+    left: 13%;
+    z-index: 0;
+    scale: 1.2;
+}
+
+.about-int-vids h3 {
+    position: absolute;
+    top: 15vh;
+    right: -45vw;
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    font-family: Metropolis;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px #ffde59;
+    box-shadow: 5px 5px 10px black;
+}
+
+.close {
+    width: 83vw;
+    height: 75vh;
+    position: absolute;
+    margin-top: -100vh;
+    margin-left: -40%;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.about-bts-vids {
+    width: 50%;
+    left: 43%;
+    position: relative;
+    top: 0;
+    padding-top: 56.25%;
+}
+
+.about-bts-vids h3 {
+    position: absolute;
+    bottom: 50vh;
+    left: -30vw;
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 75%;
+    font-family: Metropolis;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px #03989e;
+    box-shadow: 5px 5px 10px black;
+}
+
+.bts-full {
+    position: absolute;
+    scale: 1.2;
+    top: 20vh;
+    z-index: 0;
+}
+
+.tutup {
+    width: 60vw;
+    left: -5vw;
+    height: 75vh;
+    top: 10vh;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+/* Responsive */
+
+/* VERY Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    #About {
+        margin-top: 5vh;
+        padding-bottom: 25vh;
+    }
+
+    .interview-vids iframe {
+        height: 25vh;
+    }
+
+    .about-int-vids h3 {
+        top: 10vh;
+        text-shadow: 0.3vw 0.3vh #ffde59;
+    }
+
+    .about-judul2 {
+        margin-top: 10vh;
+    }
+
+    .about-int-text h3 {
+        transform: rotate(0);
+        margin-top: 5vh;
+        width: 50%;
+        font-size: 7vw;
+        text-shadow: -0.5vw 0.3vh black;
+    }
+
+    .about-int-text {
+        flex-direction: column;
+        margin-top: -18vh;
+        padding-bottom: 0;
+    }
+
+    .close {
+        height: 60vh;
+        margin-top: -50vh;
+        margin-left: -40%;
+        background-color: rgba(128, 128, 128, 0);
+    }
+
+    .text1 p {
+        width: 80%;
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    .text2 p {
+        margin-top: 5vh;
+        width: 80%;
+        font-size: 5vw;
+        text-align: right;
+    }
+
+    .bts-full iframe {
+        margin-left: -10vw;
+        height: 25vh;
+        width: 60vw;
+        margin-top: -3vh;
+    }
+
+    .about-bts-vids h3 {
+        bottom: 10vh;
+        left: -35vw;
+        text-shadow: 0.5vw 0.5vw #03989e;
+    }
+
+    .tutup {
+        height: 35vh;
+        width: 75vw;
+        margin-left: -13vw;
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+/* Extra Small Screen */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #About {
+        margin-top: 5vh;
+        padding-bottom: 15vh;
+    }
+
+    .interview-vids iframe {
+        height: 40vh;
+    }
+
+    .about-int-vids h3 {
+        top: 10vh;
+        text-shadow: 0.3vw 0.3vh #ffde59;
+    }
+
+    .about-judul2 {
+        margin-top: 0;
+    }
+
+    .about-int-text h3 {
+        transform: rotate(0);
+        margin-top: 5vh;
+        width: 50%;
+        font-size: 7vw;
+        text-shadow: -0.5vw 0.3vh black;
+    }
+
+    .about-int-text {
+        flex-direction: column;
+        margin-top: -18vh;
+        padding-bottom: 10vh;
+    }
+
+    .close {
+        height: 75vh;
+        margin-top: -70vh;
+        margin-left: -40%;
+        background-color: rgba(128, 128, 128, 0);
+    }
+
+    .text1 {
+        margin-bottom: 10vh;
+    }
+
+    .text2 {
+        margin-top: 10vh;
+    }
+
+    .text1 p {
+        width: 80%;
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    .text2 p {
+        margin-top: 5vh;
+        width: 80%;
+        font-size: 5vw;
+        text-align: right;
+    }
+
+    .bts-full iframe {
+        margin-left: -10vw;
+        height: 40vh;
+        width: 60vw;
+        margin-top: -3vh;
+    }
+
+    .about-bts-vids h3 {
+        bottom: 30vh;
+        left: -35vw;
+        text-shadow: 0.4vw 0.4vw #03989e;
+    }
+
+    .tutup {
+        height: 50vh;
+        width: 75vw;
+        margin-left: -13vw;
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #About {
+        margin-top: 5vh;
+        padding-bottom: 15vh;
+    }
+
+    .interview-vids iframe {
+        height: 40vh;
+    }
+
+    .bts-full iframe {
+        height: 40vh;
+    }
+
+    .text1 p {
+        font-size: 2vw;
+    }
+
+    .text2 p {
+        font-size: 2vw;
+    }
+
+    .about-bts-vids h3 {
+        bottom: 43vh;
+        left: -32vw;
+    }
+
+    .close {
+        height: 80vh;
+        margin-top: -95vh;
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .text1 p {
+        font-size: 2vw;
+    }
+
+    .text2 p {
+        font-size: 2vw;
+    }
+
+    .close {
+        height: 100vh;
+        margin-top: -115vh;
+        background-color: rgba(128, 128, 128, 0);
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .text1 p {
+        font-size: 2vw;
+    }
+
+    .text2 p {
+        font-size: 2vw;
+    }
+
+    .close {
+        height: 100vh;
+        margin-top: -115vh;
+        background-color: rgba(128, 128, 128, 0);
+    }
+
+    .about-bts-vids h3 {
+        bottom: 60vh;
+    }
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1441px) and (max-width: 2112px) {
+    .text1 p {
+        font-size: 2vw;
+    }
+
+    .text2 p {
+        font-size: 2vw;
+    }
+
+    .close {
+        height: 100vh;
+        margin-top: -115vh;
+        background-color: rgba(128, 128, 128, 0);
+    }
+
+    .about-bts-vids h3 {
+        bottom: 60vh;
+    }
+}
+
+/* VERY Large Screen */
+@media screen and (min-wdith: 2113px) {
+    /* none */
+}

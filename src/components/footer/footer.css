@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Manrope:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@500&family=Rajdhani&display=swap");
+
+#Contact {
+    background-color: #ffde59;
+    width: 100%;
+}
+
+.judul-footer {
+    margin-left: 12%;
+    padding-top: 5%;
+}
+
+.judul-footer h2 {
+    font-size: 4vw;
+    font-family: "Anton", sans-serif;
+    font-weight: lighter;
+}
+
+.contact-us {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 13.5%;
+    width: 12%;
+    background-color: black;
+    height: 7vh;
+    border-radius: 20vw;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2vw;
+    font-family: "Bebas Neue", cursive;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-us img {
+    width: 10%;
+    margin-left: 4%;
+    margin-bottom: 0%;
+}
+
+.contact-us:hover {
+    background-color: #03989e;
+    color: #ffde59;
+    transition: 0.3s ease-in-out;
+}
+
+.white-line {
+    border-bottom: 6px solid black;
+    border-radius: 5px;
+    width: 75%;
+    position: absolute;
+    left: 11%;
+    margin: 0.5% auto;
+}
+
+.address {
+    margin-left: 11%;
+    margin-top: 5%;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.connect-address {
+    width: 35%;
+}
+
+.connect-icon {
+    width: 5%;
+    height: 13vh;
+    font-size: 3vw;
+    list-style: none;
+}
+
+.connect-icon ul {
+    list-style: none;
+}
+
+.connect-icon li a {
+    color: black;
+}
+
+.connect-icon li a:hover {
+    color: #03989e;
+}
+
+.connect-address h3 {
+    font-size: 3vw;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    margin-bottom: 4vh;
+}
+
+.connect-address p {
+    font-weight: bold;
+    font-weight: bold;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.75vw;
+}
+
+.connect-address p a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.connect-address p a:hover {
+    color: #03989e;
+    text-decoration: underline;
+}
+
+.white-second-line {
+    border-bottom: 6px solid black;
+    border-radius: 5px;
+    width: 75%;
+    position: absolute;
+    left: 11%;
+    margin-top: 3%;
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive */
+
+/* VERY Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    #Contact {
+        padding-top: 3vh;
+    }
+
+    .judul-footer {
+        margin-left: 5%;
+    }
+
+    .judul-footer h2 {
+        font-size: 7vw;
+    }
+
+    .contact-us {
+        height: 7vh;
+        width: 55%;
+        font-size: 6vw;
+        margin-left: 5%;
+    }
+
+    .white-line {
+        width: 90%;
+        left: 5%;
+    }
+
+    .white-second-line {
+        width: 93%;
+        left: 4%;
+    }
+
+    .address {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        margin-left: 5%;
+    }
+
+    .connect-address {
+        width: 75%;
+    }
+
+    .connect-address h3 {
+        font-size: 6vw;
+        margin-bottom: 3vh;
+    }
+
+    .connect-address p {
+        font-size: 4vw;
+    }
+
+    .connect-address p a {
+        font-size: 4.5vw;
+    }
+
+    .connect-icon {
+        width: 20%;
+        height: 20vh;
+        font-size: 10vw;
+        list-style: none;
+        margin-right: -20vw;
+    }
+
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 2.5vw;
+    }
+}
+
+/* Extra Small Screen */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .contact-us {
+        width: 25vw;
+    }
+
+    .contact-us p {
+        font-size: 4vw;
+    }
+
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 1.5vw;
+    }
+
+    .connect-address {
+        width: 50%;
+    }
+
+    .connect-address p a {
+        font-size: 2.5vw;
+    }
+
+    .connect-icon {
+        margin-bottom: -5vh;
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #Contact {
+        margin-top: -15vh;
+    }
+
+    .contact-us {
+        width: 15vw;
+    }
+
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 1.3vw;
+    }
+}
+
+/* Medium Screen */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 1.3vw;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 1.2vw;
+    }
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1441px) and (max-width: 2112px) {
+    .copyright {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .copyright p {
+        font-size: 1.2vw;
+    }
+}
+
+/* VERY Large Screen */
+@media only screen and (min-wdith: 2113px) {
+    /* none */
+}
