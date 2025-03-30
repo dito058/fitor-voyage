@@ -7,6 +7,7 @@ We currently building a website for a company called Fitor Voyage
 * CSS
 * JavaScript
 * <a href="https://react.dev">React</a>
+* <a href="https://vite.dev">Vite</a>
 
 ## Contact Us
 Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdkbpKfjhRMwmKNJbVwRZsChmHRDmBQWWZcNClLTjlBsFgQXbczxfQKlRXzvSHBhGWJhg
